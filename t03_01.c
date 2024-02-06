@@ -1,11 +1,10 @@
-// NIM - NAMA
+// 12S23030 - Simorangkir Jonathan
 #include <stdio.h>
-#include <limits.h>
 
 int main() {
     int n, num;
-    int min_val = INT_MAX;
-    int max_val = INT_MIN;
+    int min_val = 100; 
+    int max_val = -100; 
 
     scanf("%d", &n);
 
@@ -14,7 +13,7 @@ int main() {
         if(num < min_val) {
             min_val = num;  
         }
-        else if(num > max_val) {
+        if(num > max_val) {
             max_val = num;
         }
     }
