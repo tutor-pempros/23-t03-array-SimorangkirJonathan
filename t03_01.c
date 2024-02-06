@@ -1,11 +1,26 @@
 // NIM - NAMA
-
 #include <stdio.h>
+#include <limits.h>
 
-int main(int _argc, char **_argv)
-{
+int main() {
+    int n, num;
+    int min_val = INT_MAX;
+    int max_val = INT_MIN;
 
-  // your code here
+    scanf("%d", &n);
 
-  return 0;
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &num);
+        if(num < min_val) {
+            min_val = num;  
+        }
+        else if(num > max_val) {
+            max_val = num;
+        }
+    }
+
+    printf("%d\n", min_val);
+    printf("%d\n", max_val);
+
+    return 0;
 }
